@@ -9,18 +9,22 @@ Docker instruction
 ==================
 
 
-`docker build -t flaskapp .`
+.. code-block:: bash
 
-`docker run -it -p 5000:5000 flaskapp`
+    docker build -t flaskapp .
+
+    docker run -it -p 5000:5000 flaskapp
 
 for local dev:
 -------------
 
-`docker run -v \`pwd\`:/flaskapp -it -p 5000:5000 flaskapp`
+.. code-block:: bash
 
-or
+    docker run -v `pwd`:/flaskapp -it -p 5000:5000 flaskapp
 
-`docker run -v \`pwd\`:/flaskapp -it -p 5000:5000 bash`
+    # or
+
+    docker run -v `pwd`:/flaskapp -it -p 5000:5000 bash
 
 
 
