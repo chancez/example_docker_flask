@@ -5,6 +5,24 @@ My Flask App
 A flasky app.
 
 
+Docker instruction
+==================
+
+
+docker build -t flaskapp .
+docker run -it -p 5000:5000 flaskapp
+
+for local dev:
+-------------
+
+docker run -v `pwd`:/flaskapp -it -p 5000:5000 flaskapp
+
+or
+
+docker run -v `pwd`:/flaskapp -it -p 5000:5000 bash
+
+
+
 Quickstart
 ----------
 
