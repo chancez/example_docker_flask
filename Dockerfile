@@ -8,7 +8,8 @@ RUN apt-get install -yq \
     python-dev \
     python-distribute \
     python-pip \
-    python-virtualenv \
+    python-virtualenv
+
 RUN virtualenv /venv
 WORKDIR /flaskapp
 
